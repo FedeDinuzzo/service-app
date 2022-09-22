@@ -1,21 +1,21 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, like, shield, star  } from "../assets";
 
 export const navLinks = [
   {
-    id: "home",
-    title: "Home",
+    id: "inicio",
+    title: "Inicio",
   },
   {
-    id: "features",
-    title: "Features",
+    id: "heladeras",
+    title: "Heladeras",
   },
   {
-    id: "product",
-    title: "Product",
+    id: "lavarropas",
+    title: "Lavarropas",
   },
   {
-    id: "clients",
-    title: "Clients",
+    id: "contacto",
+    title: "Contacto",
   },
 ];
 
@@ -23,23 +23,23 @@ export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Rewards",
+    title: "Calidad",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      "Nos esmeramos cada día para garantizar la plena satisfacción de nuestros clientes",
   },
   {
     id: "feature-2",
     icon: shield,
-    title: "100% Secured",
+    title: "100% Comprometidos",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      "Lo mas importante de brindar un servicio, es que cumplimos con nuestra palabra",
   },
   {
     id: "feature-3",
-    icon: send,
-    title: "Balance Transfer",
+    icon: like,
+    title: "Confianza",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "La mejor forma de crecer no es vendiendo un servicio, si no fidelizando a nuestros clientes",
   },
 ];
 
@@ -73,18 +73,18 @@ export const feedback = [
 export const stats = [
   {
     id: "stats-1",
-    title: "User Active",
-    value: "3800+",
+    title: "de garantia",
+    value: "1 año",
   },
   {
     id: "stats-2",
-    title: "Trusted by Company",
-    value: "230+",
+    title: "presupuestos sin cargo",
+    value: "$0",
   },
   {
     id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
+    title: "clientes satisfechos",
+    value: "+9999",
   },
 ];
 
