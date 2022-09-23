@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
 import Heladeras from "./Heladeras";
-import CardDeal from "./CardDeal";
+import Lavarropas from "./Lavarropas";
 import Features from "./Features";
 import Clients from "./Clients";
 import CTA from "./CTA";
@@ -12,7 +12,7 @@ import Hero from "./Hero";
 export {
   Navbar,
   Heladeras,
-  CardDeal,
+  Lavarropas,
   Features,
   Clients,
   CTA,
