@@ -1,9 +1,8 @@
-import airbnb from "./airbnb.png";
 import heladera from "./heladera-frente.webp";
-import binance from "./binance.png";
 import lavarropas from "./lavarropas-frente.webp";
-import coinbase from "./coinbase.png";
-import dropbox from "./dropbox.png";
+import capitalFederal from "./capitalFederal.webp";
+import zonaNorte from "./zonaNorte.webp";
+import zonaSur from "./zonaSur.webp";
 import logo from "./logo.svg";
 import quotes from "./quotes.svg";
 import robot from "./robot.png";
@@ -16,10 +15,10 @@ import google from "./google.svg";
 import apple from "./apple.svg";
 import arrowUp from "./arrow-up.svg";
 import autorizado from "./autorizado.svg";
-import facebook from "./facebook.svg";
+import mapa from "./mapa.svg";
 import instagram from "./instagram.svg";
 import linkedin from "./linkedin.svg";
-import twitter from "./twitter.svg";
+import telefono from "./telefono.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
@@ -27,12 +26,11 @@ import atencion from "./atencion.png";
 
 export {
   atencion,
-  airbnb,
   heladera,
-  binance,
   lavarropas,
-  coinbase,
-  dropbox,
+  capitalFederal,
+  zonaNorte,
+  zonaSur,
   logo,
   quotes,
   robot,
@@ -45,10 +43,10 @@ export {
   apple,
   arrowUp,
   autorizado,
-  facebook,
+  mapa,
   instagram,
   linkedin,
-  twitter,
+  telefono,
   people01,
   people02,
   people03,

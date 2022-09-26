@@ -3,7 +3,7 @@ import styles, { layout } from "../style";
 import Button from './Button';
 
 const FeatureCard = ({ icon, title, content, index}) => (
-  <div className={`flex flex-row p-6 lg:ml-20 rounded-[20px] ${index !== features.length -1 ? "mb-6" : "mb-0"} feature-card ${index === 1 ? 'feature-card-set' : ''}`}>
+  <div className={`flex flex-row p-6 lg:ml-20 max-w-[470px] rounded-[20px] ${index !== features.length -1 ? "mb-6" : "mb-0"} feature-card ${index === 1 ? 'feature-card-set' : ''}`}>
     <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}> 
       <img src={icon} alt="icon" className="w-[50%] h-[50%] object-contain" />
     </div>
@@ -11,7 +11,7 @@ const FeatureCard = ({ icon, title, content, index}) => (
       <h4 className="font-poppins font-semibold text-white text-[18px] leading-[23px] mb-1">
         {title}
       </h4>
-      <p className="font-poppins font-norma; text-dimWhite text-[18px] leading-[23px] mb-1">
+      <p className="font-poppins font-norma; text-dimWhite text-[16px] leading-[23px] mb-1">
         {content}
       </p>
     </div>
@@ -21,8 +21,8 @@ const FeatureCard = ({ icon, title, content, index}) => (
 const Features = () =>  (
   <section id="features" className={layout.section}>
     <div className={layout.sectionInfo}>
-      <h2 className={styles.heading2}>¿Por qué elegirnos? <br className="sm:blok hidden"/> 30 Años de Experiencia</h2>
-      <p className={`${styles.paragraph} max-w-[470px]`}>Con mas de 30 años de experiencia en el rubro brindamos una asistencia diferenciada y eficiente respaldada por miles de clientes contentos que ya repararon sus productos</p>
+      <h2 className={styles.heading2}>¿Por qué elegirnos? <br className="sm:block hidden"/>30 Años de Experiencia</h2>
+      <p className={`${styles.paragraph} max-w-[550px] mt-5`}>Con mas de 30 años de experiencia en el rubro brindamos una asistencia diferenciada y eficiente respaldada por miles de clientes contentos que ya repararon sus productos.</p>
     
       <Button styles="mt-10" />
     </div>

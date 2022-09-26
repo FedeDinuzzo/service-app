@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 import Heladeras from "./Heladeras";
 import Lavarropas from "./Lavarropas";
 import Features from "./Features";
-import Clients from "./Clients";
+import Zones from "./Zones";
 import CTA from "./CTA";
 import Stats from "./Stats";
 import Footer from "./Footer";
@@ -14,7 +14,7 @@ export {
   Heladeras,
   Lavarropas,
   Features,
-  Clients,
+  Zones,
   CTA,
   Stats,
   Footer,

@@ -13,18 +13,21 @@ const Hero = () => (
           <span className="text-white">AUTORIZADO</span>
         </p>
       </div>
-
+      
       <div className="flex flex-row justify-between items-center w-full">
-        <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100px] leading-[75px]">
+        <div className="absolute z-[0] w-[60%] h-[50%] -left-[40%] rounded-full bg-gradient-to-r from-white to-transparent blur-[250px]" />
+
+        <h1 className="flex-1 font-poppins font-semibold ss:text-[68px] text-[48px] text-white ss:leading-[90px] leading-[70px]">
           Service <br className="sm:block hidden"/> {" "}
           <span className="text-gradient">Electrolux</span> {" "}
         </h1>
         <div className="ss:flex hidden md:mr4 mr-0">
           <SolicitarTecnico />
         </div>
+          
       </div>
 
-    <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100px] leading-[75px] w-full">
+    <h1 className="font-poppins font-semibold ss:text-[68px] text-[48px] text-white ss:leading-[90px] leading-[70px] w-full">
         Especializado
       </h1>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>Service en CABA y BUENOS AIRES de Heladeras  y Lavarropas Electrolux.  Desliza e infórmate acerca de nuestra forma de trabajo y las reparaciones que realizamos</p>

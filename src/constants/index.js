@@ -1,4 +1,4 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, like, shield, star  } from "../assets";
+import { people01, people02, people03, mapa, instagram, linkedin, telefono, like, shield, star, capitalFederal, zonaSur, zonaNorte  } from "../assets";
 
 export const navLinks = [
   {
@@ -47,25 +47,25 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
-    title: "Founder & Leader",
+      "Tenia el Lavarropas roto  Vinieron y lo arreglaron en el día, me dejaron el lavarropas funcionando perfecto.",
+    name: "Martina Ramos",
+    title: "Recoleta - CABA",
     img: people01,
   },
   {
     id: "feedback-2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
-    title: "Founder & Leader",
+      "Vinieron de otro service a reparar mi heladera, pero volvio a fallar, encontré su web y me lo resolvieron en el momento!",
+    name: "Augusto Weich",
+    title: "Lanus - Buenos Aires",
     img: people02,
   },
   {
     id: "feedback-3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
+      "Mi heladera no funcionaba, tenia medicamentos que necesitaban refrigeración, me solucionaron el problema en el día.",
+    name: "Martin Alvarez",
+    title: "Villa Devoto - CABA",
     img: people03,
   },
 ];
@@ -90,65 +90,53 @@ export const stats = [
 
 export const footerLinks = [
   {
-    title: "Useful Links",
+    title: "Medios de pago",
     links: [
       {
-        name: "Content",
-        link: "https://www.hoobank.com/content/",
+        name: "Efectivo",
+        link: "",
       },
       {
-        name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
+        name: "Transferencia",
+        link: "",
       },
       {
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
-      },
-      {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
-      },
-      {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
+        name: "Mercado Pago",
+        link: "",
       },
     ],
   },
   {
-    title: "Community",
+    title: "Páginas",
     links: [
       {
-        name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
+        name: "Contacto",
+        link: "https://service-electrolux.ar/",
       },
       {
-        name: "Partners",
-        link: "https://www.hoobank.com/partners/",
+        name: "Heladeras",
+        link: "https://service-electrolux.ar/heladeras",
       },
       {
-        name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
+        name: "Lavarropas",
+        link: "https://service-electrolux.ar/lavarropas",
       },
       {
-        name: "Blog",
-        link: "https://www.hoobank.com/blog/",
-      },
-      {
-        name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
+        name: "Contacto",
+        link: "https://service-electrolux.ar/contacto",
       },
     ],
   },
   {
-    title: "Partner",
+    title: "Telefonos",
     links: [
       {
-        name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
+        name: "011 4383-8283",
+        link: "011 4383-8283",
       },
       {
-        name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
+        name: "011 4382-8369",
+        link: "011 4382-8369",
       },
     ],
   },
@@ -158,40 +146,36 @@ export const socialMedia = [
   {
     id: "social-media-1",
     icon: instagram,
-    link: "https://www.instagram.com/",
+    link: "https://www.instagram.com/service-electrolux",
   },
   {
     id: "social-media-2",
-    icon: facebook,
-    link: "https://www.facebook.com/",
+    icon: telefono,
+    link: "011 4382-8369",
   },
   {
     id: "social-media-3",
-    icon: twitter,
-    link: "https://www.twitter.com/",
+    icon: mapa,
+    link: "",
   },
   {
     id: "social-media-4",
     icon: linkedin,
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/A&T",
   },
 ];
 
-export const clients = [
+export const zones = [
   {
     id: "client-1",
-    logo: airbnb,
+    logo: capitalFederal,
   },
   {
     id: "client-2",
-    logo: binance,
+    logo: zonaSur,
   },
   {
     id: "client-3",
-    logo: coinbase,
-  },
-  {
-    id: "client-4",
-    logo: dropbox,
+    logo: zonaNorte,
   },
 ];
