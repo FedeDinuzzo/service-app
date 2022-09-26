@@ -1,5 +1,5 @@
 import styles from "../style";
-import { autorizado, robot } from "../assets";
+import { autorizado, robotHand, ballSmall, ballMedium, ballBig, heladeraLavarropas } from "../assets";
 import SolicitarTecnico from "./SolicitarTecnico";
 
 const Hero = () => (
@@ -15,7 +15,7 @@ const Hero = () => (
       </div>
       
       <div className="flex flex-row justify-between items-center w-full">
-        <div className="absolute z-[0] w-[60%] h-[50%] -left-[40%] rounded-full bg-gradient-to-r from-white to-transparent blur-[250px]" />
+        <div className="absolute z-[0] w-[60%] h-[20%] -left-[50%] rounded-full bg-white blur-[250px]" />
 
         <h1 className="flex-1 font-poppins font-semibold ss:text-[68px] text-[48px] text-white ss:leading-[90px] leading-[70px]">
           Service <br className="sm:block hidden"/> {" "}
@@ -34,7 +34,13 @@ const Hero = () => (
     </div>
 
     <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
-      <img src={robot} alt="fondo" className="w-[100%] h-[100%] relative z-[5]" />
+      <div className="w-[100%] h-[100%] relative z-[5] pb-[640px]">
+        <img src={robotHand} alt="fondo" className="absolute" />
+        <img src={heladeraLavarropas} alt="fondo" className="absolute" />
+        <img src={ballSmall} alt="fondo" className="absolute" />
+        <img src={ballMedium} alt="fondo" className="absolute" />
+        <img src={ballBig} alt="fondo" className="absolute" />
+      </div>
     
       <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
       <div className="absolute z-[1] w-[40%] h-[80%] rounded-full bottom-40 white__gradient" />

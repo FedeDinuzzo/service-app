@@ -5,7 +5,11 @@ import zonaNorte from "./zonaNorte.webp";
 import zonaSur from "./zonaSur.webp";
 import logo from "./logo.svg";
 import quotes from "./quotes.svg";
-import robot from "./robot.png";
+import robotHand from "./robot-hand.webp";
+import ballSmall from "./ball-small.webp";
+import ballMedium from "./ball-medium.webp";
+import ballBig from "./ball-big.webp";
+import heladeraLavarropas from "./heladera-lavarropas.webp";
 import like from "./like.svg";
 import shield from "./Shield.svg";
 import star from "./Star.svg";
@@ -33,7 +37,11 @@ export {
   zonaSur,
   logo,
   quotes,
-  robot,
+  robotHand,
+  ballSmall,
+  ballMedium,
+  ballBig,
+  heladeraLavarropas,
   like,
   shield,
   star,
