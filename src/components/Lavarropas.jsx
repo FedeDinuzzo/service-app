@@ -3,7 +3,7 @@ import styles, { layout } from "../style";
 import Button from "./Button";
 
 const Lavarropas = () => (
-  <section id="product" className={`${layout.section} -mb-40 -mt-16 md:mt-0 xl:-my-20 xl:-mb-40`}>
+  <section id="product" className={`${layout.section} -mb-28 -mt-8 md:mt-0 xl:-my-20 xl:-mb-40`}>
     <div className="absolute z-[0] w-[24%] h-[80%] -right-[0%] rounded-l-full blue__gradient" />
     <div className="absolute z-[0] w-[24%] h-[80%] -right-[0%] rounded-l-full blue__gradient" />
 
@@ -14,7 +14,7 @@ const Lavarropas = () => (
     </div>
     
     <div className={layout.sectionImgReverse}>
-      <img src={lavarropas} alt="lavarropas" className="w-[280px] xl:w-auto lg:ml-36"/>
+      <img src={lavarropas} alt="lavarropas" className=" w-[240px] md:w-[280px] xl:w-auto lg:ml-36"/>
     </div>
     
   </section>

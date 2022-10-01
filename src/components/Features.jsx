@@ -21,7 +21,7 @@ const FeatureCard = ({ icon, title, content, index}) => (
 const Features = () =>  (
   <section id="features" className={layout.section}>
     <div className={layout.sectionInfo}>
-      <h2 className={styles.heading2}>¿Por qué elegirnos? <br className="sm:block hidden"/><br/>30 Años de Experiencia</h2>
+      <h2 className={styles.heading2}>¿Por qué elegirnos? <br className="block"/>30 Años de Experiencia</h2>
       <p className={`${styles.paragraph} max-w-[550px] mt-3 xl:mt-5`}>Con mas de 30 años de experiencia en el rubro brindamos una asistencia diferenciada y eficiente respaldada por miles de clientes contentos que ya repararon sus productos.</p>
     
       <Button styles="mt-6 xl:mt-10" />

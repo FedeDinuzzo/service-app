@@ -3,9 +3,9 @@ import { autorizado, robotHand, ballSmall, ballMedium, ballBig, heladeraLavarrop
 import SolicitarTecnico from "./SolicitarTecnico";
 
 const Hero = () => (
-  <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
-    <div className={`flex-1 ${styles.flexStartHero} flex-col xl:px-0 sm:px-16 px-6 md:-my-12`}>
-      <div className="flex flex-row items-center py-[4px] xl:py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
+  <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY} lg:mt-[16px] xl:mt-0`}>
+    <div className={`flex-1 ${styles.flexStartHero} flex-col xl:px-0 sm:px-16 px-6`}>
+      <div className="flex flex-row items-center lg:mt-[28px] xl:mt-0 py-[4px] xl:py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
         <img src={autorizado} alt="autorizado" className="w-[32px] h-[32px]" />
         <p className={`${styles.paragraph} `}>
           <span className="text-white">SERVICIO </span>
