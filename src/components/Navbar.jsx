@@ -1,11 +1,14 @@
 import { useState } from "react";
 import { close, logo , menu} from '../assets';
 import { navLinks } from '../constants';
+import styles from "../style";
 
 const Navbar = () => {
   const [toggle, settoggle] = useState(false);
 
   return (
+    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+    <div className={`${styles.boxWidth}`}>
     <nav className="w-full flex py-6 justify-between items-center navbar">
       <img src={logo} alt="service electrolux" className="w-[160px] h-[100%]"/>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
@@ -14,7 +17,7 @@ const Navbar = () => {
           key={nav.id}
           className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} text-white`}
           >
-            <a href={`#${nav.id}`}>
+            <a href={`/${nav.id}`}>
               {nav.title}
             </a>
           </li>
@@ -45,6 +48,8 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+    </div>
+    </div>
   );
 };
 

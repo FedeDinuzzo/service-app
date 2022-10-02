@@ -1,32 +1,25 @@
-import styles from "./style";
-import { Heladeras, Features, Lavarropas, Zones, CTA, Footer, Navbar, Stats, Hero } from "./components";
+import { Footer, Navbar } from "./components";
+import Home from "./components/pages/home";
+import Heladeras from "./components/pages/heladeras";
+import Lavarropas from "./components/pages/lavarropas";
+import Contacto from "./components/pages/contacto";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => (
-  <div className="bg-primary w-full overflow-hidden">
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Navbar />
-      </div>
-    </div>
+  <BrowserRouter>
+    <div className="bg-primary w-full overflow-hidden">
+      <Navbar/>
 
-    <div className={`bg-primary ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Hero />
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />}/> 
+        <Route path="/heladeras" element={<Heladeras />}/>
+        <Route path="/lavarropas" element={<Lavarropas />}/>
+        <Route path="/contacto" element={<Contacto />}/> 
+      </Routes>
+
+      <Footer/>
     </div>
-    
-    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Stats />
-        <Features />
-        <Heladeras />
-        <Lavarropas />
-        <Zones />
-        <CTA />
-        <Footer />
-      </div>
-    </div>
-  </div>
+  </BrowserRouter>
 );
 
 export default App;
