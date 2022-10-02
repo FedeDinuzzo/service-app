@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { close, logo , menu} from '../assets';
 import { navLinks } from '../constants';
+import { Link } from 'react-router-dom';
 import styles from "../style";
-
 const Navbar = () => {
   const [toggle, settoggle] = useState(false);
 
@@ -11,18 +11,18 @@ const Navbar = () => {
     <div className={`${styles.boxWidth}`}>
     <nav className="w-full flex py-6 justify-between items-center navbar">
       <img src={logo} alt="service electrolux" className="w-[160px] h-[100%]"/>
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1">
+      <ul className="list-none sm:flex hidden justify-end items-center flex-1">      
         {navLinks.map((nav, index) => (
           <li
           key={nav.id}
           className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} text-white`}
           >
-            <a href={`/${nav.id}`}>
-              {nav.title}
-            </a>
+            <Link to={`/${nav.id}`}>{nav.title}</Link>
           </li>
         ))}
       </ul>
+
+      
 
       <div className="sm:hidden flex flex-1 justify-end items-center">
         <img 

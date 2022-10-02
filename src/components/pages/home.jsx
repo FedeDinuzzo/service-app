@@ -1,14 +1,22 @@
 import React from 'react'
 import styles from "../../style";
 import { Heladeras, Features, Lavarropas, Zones, CTA, Stats, Hero } from "../"
-
+import { heladeraLavarropas } from '../../assets';
 
 function home() {
   return (
     <>
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-          <Hero />
+        <Hero 
+          textOne="SERVICIO"
+          textTwo="TÉCNICO"
+          textThree="AUTORIZADO"
+          titleOne="Service" 
+          titleTwo="Electrolux" 
+          titleThree="Especializado" 
+          img={heladeraLavarropas}
+        />
         </div>
       </div>
       

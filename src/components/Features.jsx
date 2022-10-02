@@ -24,7 +24,7 @@ const Features = () =>  (
       <h2 className={styles.heading2}>¿Por qué elegirnos? <br className="block"/>30 Años de Experiencia</h2>
       <p className={`${styles.paragraph} max-w-[550px] mt-3 xl:mt-5`}>Con mas de 30 años de experiencia en el rubro brindamos una asistencia diferenciada y eficiente respaldada por miles de clientes contentos que ya repararon sus productos.</p>
     
-      <Button styles="mt-6 xl:mt-10" />
+      <Button styles="mt-6 xl:mt-10" text="Contactanos" />
     </div>
 
     <div className={`${layout.sectionImg} flex-col`}>
