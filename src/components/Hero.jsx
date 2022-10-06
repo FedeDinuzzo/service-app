@@ -34,8 +34,9 @@ const Hero = ({ textOne, textTwo, textThree, textFour, titleOne, titleTwo, title
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>Service en CABA y BUENOS AIRES de Heladeras y Lavarropas Electrolux. Desliza e infórmate acerca de nuestra forma de trabajo.</p>
     </div>
     
-    <img src={Rectangle} alt="" className="absolute top-0 right-0"/>
-    <img src={Rectangle2} alt="" className="absolute top-0 right-0"/>
+
+    <div className="absolute z-[0] w-[40%] h-[70%] top-[0%] -right-[15%] rounded-full blue__gradient opacity-80" />
+    <div className="absolute z-[0] w-[40%] h-[40%] -top-[20%] right-0 rounded-full pink__gradient" />
 
     <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
       <div className="w-[6%] sm:w-[34%] md:w-[14%] xl:w-[0%]"></div>

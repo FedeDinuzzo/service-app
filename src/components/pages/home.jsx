@@ -8,8 +8,8 @@ function home() {
   return (
     <motion.div 
       initial={{ width: 0 }}
-      animate={{ width: "100%" }}
-      exit={{ x: window.innerWidth, transition: {duration: 0.2} }}
+      animate={{ width: "100%", transition: {duration: 0.3}}}
+      exit={{ x: window.innerWidth }}
     >
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
