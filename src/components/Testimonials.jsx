@@ -3,9 +3,7 @@ import styles from "../style";
 import FeedbackCard from './FeedbackCard';
 
 const Testimonials = () => (
-  <section id="clients" className={`${styles.flexCenter} flex-col relative`}>
-    <div className="absolute z-[0] w-[60%] h-[80%] -right-[50%] rounded-full blue__gradient" />
-
+  <section id="clients" className={`${styles.flexCenter} flex-col relative lg:mb-40`}>
     <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
       <h1 className={styles.heading2}>Experiencias de
       <br className="sm:block hidden" />Nuestros Clientes</h1>
@@ -19,6 +17,7 @@ const Testimonials = () => (
         <FeedbackCard key={card.id} {...card} />
       ))}
     </div>
+    <div className="absolute z-[0] w-[60%] h-[120%] -right-[50%] mt-[30%] rounded-full blue__gradient" />
   </section>
 );
 

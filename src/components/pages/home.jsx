@@ -1,11 +1,16 @@
 import React from 'react'
 import styles from "../../style";
-import { Heladeras, Features, Lavarropas, Zones, CTA, Stats, Hero } from "../"
+import { Heladeras, Features, Lavarropas, Zones, CTA, Stats, Hero } from ".."
 import { heladeraLavarropas } from '../../assets';
+import { motion } from 'framer-motion';
 
 function home() {
   return (
-    <>
+    <motion.div 
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: {duration: 0.2} }}
+    >
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
         <Hero 
@@ -30,7 +35,7 @@ function home() {
           <CTA />
         </div>
       </div>
-    </>
+    </motion.div>
   )
 }
 

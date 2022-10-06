@@ -1,5 +1,5 @@
 import styles from "../style";
-import { autorizado, robotHand, ballSmall, ballMedium, ballBig} from "../assets";
+import { autorizado, robotHand, ballSmall, ballMedium, ballBig, Vector, Rectangle, Rectangle2} from "../assets";
 import SolicitarTecnico from "./SolicitarTecnico";
 
 const Hero = ({ textOne, textTwo, textThree, textFour, titleOne, titleTwo, titleThree, img}) => (
@@ -33,22 +33,22 @@ const Hero = ({ textOne, textTwo, textThree, textFour, titleOne, titleTwo, title
       </h1>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>Service en CABA y BUENOS AIRES de Heladeras y Lavarropas Electrolux. Desliza e infórmate acerca de nuestra forma de trabajo.</p>
     </div>
+    
+    <img src={Rectangle} alt="" className="absolute top-0 right-0"/>
+    <img src={Rectangle2} alt="" className="absolute top-0 right-0"/>
 
     <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
       <div className="w-[6%] sm:w-[34%] md:w-[14%] xl:w-[0%]"></div>
+
       <div className="w-[94%] sm:w-[70%] md:w-[86%] xl:w-[100%] h-[100%] relative z-[5] pb-[400px] sm:pb-[500px] md:pb-[640px]">
-        <img src={robotHand} alt="fondo" className="absolute" />
+        <img src={Vector} alt="" className="absolute right-[12%]"/>
         <img src={img} alt="fondo" className="absolute" />
         <img src={ballSmall} alt="fondo" className="absolute" />
         <img src={ballMedium} alt="fondo" className="absolute" />
         <img src={ballBig} alt="fondo" className="absolute" />
+        <img src={robotHand} alt="fondo" className="absolute" />
       </div>
-    
-      <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
-      <div className="absolute z-[1] w-[40%] h-[80%] rounded-full bottom-40 white__gradient" />
-      <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
     </div>
-
     <div className={`ss:hidden ${styles.flexCenter}`}>
       <SolicitarTecnico />
     </div>
