@@ -42,8 +42,6 @@ import reparacionHeladeras from "./reparaciones-heladeras.webp";
 import reparacionLavarropas from "./reparaciones-lavarropas.webp";
 import lights from "./lights.png";
 import Vector from "./Vector.svg";
-import Rectangle from "./Rectangle.svg";
-import Rectangle2 from "./Rectangle2.svg";
 import callUs from "./callUs.webp";
 import ellipse2 from "./ellipse2.webp";
 
@@ -51,8 +49,6 @@ export {
   callUs,
   ellipse2,
   Vector,
-  Rectangle,
-  Rectangle2,
   atencion,
   heladera,
   lavarropas,

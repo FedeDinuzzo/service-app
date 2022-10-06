@@ -1,5 +1,5 @@
 import styles from "../style";
-import { autorizado, robotHand, ballSmall, ballMedium, ballBig, Vector, Rectangle, Rectangle2} from "../assets";
+import { autorizado, robotHand, ballSmall, ballMedium, ballBig, Vector } from "../assets";
 import SolicitarTecnico from "./SolicitarTecnico";
 
 const Hero = ({ textOne, textTwo, textThree, textFour, titleOne, titleTwo, titleThree, img}) => (
