@@ -2,7 +2,7 @@ const styles = {
   boxWidth: "lg:max-w-[1280px] w-full",
 
   heading2: "font-poppins font-semibold text-[30px] md:text-[36px] lg:text-[40px] xl:text-[44px] text-[32px] text-white xl:leading-[70px] leading-[50px] w-full",
-  paragraph: "font-poppins font-normal text-dimWhite text-[16px] xl:text-[18px] leading-[30px]",
+  paragraph: "font-poppins font-normal text-dimWhite text-[16x] xl:text-[18px] leading-[30px]",
 
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",

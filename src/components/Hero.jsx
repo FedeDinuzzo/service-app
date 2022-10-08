@@ -6,7 +6,7 @@ import Ball from "./animations/ball";
 const Hero = ({ textOne, textTwo, textThree, textFour, titleOne, titleTwo, titleThree, img}) => (
   <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY} lg:mt-[16px] xl:mt-0`}>
     <div className={`flex-1 ${styles.flexStartHero} flex-col xl:px-0 sm:px-16 px-6`}>
-      <div className="flex flex-row items-center lg:mt-[28px] xl:mt-0 py-[4px] xl:py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
+      <div className="flex flex-row items-center -mt-[32px] sm:mt-0 lg:mt-[28px] xl:mt-0 py-[4px] xl:py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
         <img src={autorizado} alt="autorizado" className="w-[32px] h-[32px]" />
         <p className={`${styles.paragraph} `}>
           <span className="text-white">{textOne} </span>
@@ -18,7 +18,7 @@ const Hero = ({ textOne, textTwo, textThree, textFour, titleOne, titleTwo, title
       
       <div className="flex flex-row justify-between items-center w-full">
         <div className="absolute z-[0] w-[60%] h-[20%] -left-[50%] rounded-full bg-white blur-[250px]" />
-        <h1 className="flex-1 font-poppins font-semibold text-[42px] md:text-[52px] xl:text-[68px] text-white leading-[50px] md:leading-[70px] xl:leading-[90px]">
+        <h1 className="flex-1 font-poppins font-semibold text-[42px] md:text-[52px] xl:text-[68px] text-white leading-[46px] md:leading-[70px] xl:leading-[90px]">
           {titleOne} <br className="sm:block hidden"/> {" "}
           <span className="text-gradient">{titleTwo}</span> {" "}
         </h1>
@@ -27,7 +27,7 @@ const Hero = ({ textOne, textTwo, textThree, textFour, titleOne, titleTwo, title
         </div>
       </div>
 
-    <h1 className="font-poppins font-semibold text-[42px] md:text-[52px] xl:text-[68px] text-white leading-[50px] md:leading-[70px] xl:leading-[90px] w-full">
+    <h1 className="font-poppins font-semibold text-[42px] md:text-[52px] xl:text-[68px] text-white leading-[46px] md:leading-[70px] xl:leading-[90px] w-full">
         {titleThree}
       </h1>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>Service en CABA y BUENOS AIRES de Heladeras y Lavarropas Electrolux. Desliza e infórmate acerca de nuestra forma de trabajo.</p>
