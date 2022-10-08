@@ -1,5 +1,5 @@
 import styles from "../style";
-import { autorizado, robotHand, ballSmall, ballMedium, ballBig, Vector} from "../assets";
+import { autorizado, robotHand, Vector} from "../assets";
 import SolicitarTecnico from "./SolicitarTecnico";
 import Ball from "./animations/ball";
 
@@ -34,7 +34,7 @@ const Hero = ({ textOne, textTwo, textThree, textFour, titleOne, titleTwo, title
     </div>
     
 
-    <div className="absolute z-[0] w-[40%] h-[70%] top-[0%] -right-[15%] rounded-full blue__gradient opacity-80" />
+    <div className="absolute z-[0] w-[40%] h-[70%] top-[0%] right-0 lg:-right-[15%] rounded-full blue__gradient opacity-80" />
     <div className="absolute z-[0] w-[40%] h-[40%] -top-[20%] right-0 rounded-full pink__gradient" />
 
     <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
