@@ -44,8 +44,18 @@ import lights from "./lights.png";
 import Vector from "./Vector.svg";
 import callUs from "./callUs.webp";
 import ellipse2 from "./ellipse2.webp";
+import navHeladeras from "./navHeladeras.svg";
+import navContacto from "./navLavarropas.svg";
+import navLavarropas from "./navLavarropas.svg";
+import navInicio from "./navInicio.svg";
+import wppLogo from "./wppLogo.svg";
 
 export {
+  wppLogo,
+  navInicio,
+  navHeladeras,
+  navLavarropas,
+  navContacto,
   callUs,
   ellipse2,
   Vector,

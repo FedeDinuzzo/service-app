@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { close, logo , menu} from '../assets';
+import { close, logo , menu, wppLogo, navContacto, navHeladeras, navInicio, navLavarropas} from '../assets';
 import { navLinks } from '../constants';
 import { Link } from 'react-router-dom';
 import styles from "../style";
@@ -22,31 +22,33 @@ const Navbar = () => {
         ))}
       </ul>
 
-      
-
-      <div className="sm:hidden flex flex-1 justify-end items-center">
-        <img 
-          src={toggle ? close : menu} 
-          alt="menu"
-          className="w-[28px] h-[28px] object-contain"
-          onClick={() => settoggle((prev) => !prev)}
-        />
-
-        <div className={`${toggle ? 'flex' : 'hidden'} p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>'
-          <ul className="list-none flex flex-col justify-end items-center flex-1">
-            {navLinks.map((nav, index) => (
-            <li
-              key={nav.id}
-              className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mb-4'} text-white`}
-            >
-              <a href={`#${nav.id}`}>
-                {nav.title}
-              </a>
-            </li>
-            ))}
-          </ul>
+      <div className="block fixed bottom-0 w-full z-50 sm:hidden">
+      <div className="flex w-full h-[30px] bg-slate-700">
+        <div className="flex space-evenly items-center absolute bottom-0 left-0 border-b w-[50%] h-[60px] bg-slate-700 pt-[4px]">
+          <Link to="/">
+          <div className={`bg-[${navInicio}] text-center h-[30px] w-full bg-contain bg-center bg-no-repeat`} />
+            <div className="font-poppins p-[4px] pb-[8px]">Inicio</div>
+          </Link>
+          <Link to="/heladeras">
+          <div className={`bg-[${navHeladeras}] text-center h-[30px] w-full bg-contain bg-center bg-no-repeat`} />
+            <div className="font-poppins p-[4px] pb-[8px]">Heladeras</div>
+          </Link>
+        </div>
+          <img src={wppLogo} alt="" height="68px" width="68px" className="h-[72px] absolute bottom-[12px] left-0 right-0 m-auto z-[100]"/>
+        <div className="flex space-evenly items-center absolute bottom-0 right-0 border-b w-[50%] h-[60px] bg-slate-700 pt-[4px]">  
+        <Link to="/lavarropas">
+        <div className={`bg-[${navLavarropas}] text-center h-[30px] w-full bg-contain bg-center bg-no-repeat`} />
+            <div className="font-poppins p-[4px] pb-[8px]">Lavarropas</div>
+          </Link>
+          <Link to="/contacto">
+            <div className={`bg-[${navContacto}] text-center h-[30px] w-full bg-contain bg-center bg-no-repeat`} />
+            <div className="font-poppins p-[4px] pb-[8px]">Contacto</div>
+          </Link>
         </div>
       </div>
+    </div>      
+
+     
     </nav>
     </div>
     </div>
