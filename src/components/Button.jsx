@@ -1,4 +1,5 @@
 import React from "react";
+//button
 
 const Button = ({ styles, text, link }) => (
   <a href={`${link}`}>
