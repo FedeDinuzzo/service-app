@@ -1,6 +1,14 @@
 import { motion } from 'framer-motion';
 
-const Ball = ({ w, h, cx, cy, r, cyAnimate, duration}) => (
+const Ball = ({ 
+  w, 
+  h, 
+  cx, 
+  cy, 
+  r, r1, r2, r3,
+  cyAnimate, 
+  duration
+}) => (
   <svg width={w} height={h} xmlns="http://www.w3.org/2000/svg">
     <defs>
       <motion.radialGradient
@@ -26,7 +34,7 @@ const Ball = ({ w, h, cx, cy, r, cyAnimate, duration}) => (
       fill="url(#gradient1)"
       cx={cx}
       cy={cy}
-      r={r}
+      r={`${r} md:${r1} lg:${r2} xl:${r3}`}
       animate={{ cy: cyAnimate }}
       transition={{
       repeat: Infinity,
