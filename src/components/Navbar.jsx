@@ -30,7 +30,7 @@ const Navbar = () => {
           ))}
           </div>
           <img src={wppLogo} alt="" height="58px" width="58px" className="absolute bottom-[2px] left-0 right-0 m-auto z-[100]"/>
-          <div className="flex justify-evenly items-center absolute bottom-0 right-0 w-[46%] h-[42px] bg-primary rounded-tl-[36px] rounded-tr-[20px] pr-4">  
+          <div className="flex justify-evenly items-center absolute bottom-0 right-0 w-[46%] h-[42px] bg-primary rounded-tl-[36px] rounded-tr-[20px] pr-4 shadow-[0_-1px_12px_#726F96]">  
           {navLinks.map((nav, index) => (
             <Link to={`/${nav.id}`}>
               <div key={nav.id} className={`${index <= 1 ? 'mr-0' : 'mr-12'} bg-[url('./assets/nav${nav.title}.svg')] text-center h-[28px] w-full bg-contain bg-center bg-no-repeat`} ></div>
