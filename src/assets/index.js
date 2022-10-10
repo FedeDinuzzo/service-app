@@ -45,7 +45,7 @@ import Vector from "./Vector.svg";
 import callUs from "./callUs.webp";
 import ellipse2 from "./ellipse2.webp";
 import navHeladeras from "./navHeladeras.svg";
-import navContacto from "./navLavarropas.svg";
+import navContacto from "./navContacto.svg";
 import navLavarropas from "./navLavarropas.svg";
 import navInicio from "./navInicio.svg";
 import wppLogo from "./wppLogo.svg";

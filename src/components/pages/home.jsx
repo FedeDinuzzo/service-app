@@ -7,9 +7,8 @@ import { motion } from 'framer-motion';
 function home() {
   return (
     <motion.div 
-      initial={{ width: 0 }}
-      animate={{ width: "100%", transition: {duration: 0.3}}}
-      exit={{ x: window.innerWidth }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: {duration: 0.75} }}
     >
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>

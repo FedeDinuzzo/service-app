@@ -8,7 +8,7 @@ import { AnimatePresence } from "framer-motion";
 function AnimatedRoutes() {
   
   return (
-    <AnimatePresence>
+    <AnimatePresence exitBeforeEnter>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />}/> 
         <Route path="/heladeras" element={<Heladeras />}/>

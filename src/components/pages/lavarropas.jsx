@@ -11,9 +11,8 @@ import { motion } from 'framer-motion';
 function lavarropas() {
   return (
     <motion.div 
-      initial={{ width: 0 }}
-      animate={{ width: "100%" }}
-      exit={{ x: window.innerWidth, transition: {duration: 0.2} }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: {duration: 0.75} }}
     >
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>

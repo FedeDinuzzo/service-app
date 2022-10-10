@@ -4,8 +4,8 @@ const Ball = ({
   w, 
   h, 
   cx, 
-  cy, 
-  r, r1, r2, r3,
+  cy,
+  r, r2,
   cyAnimate, 
   duration
 }) => (
@@ -34,7 +34,7 @@ const Ball = ({
       fill="url(#gradient1)"
       cx={cx}
       cy={cy}
-      r={`${r} md:${r1} lg:${r2} xl:${r3}`}
+      r={r}
       animate={{ cy: cyAnimate }}
       transition={{
       repeat: Infinity,
