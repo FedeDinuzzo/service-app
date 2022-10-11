@@ -13,10 +13,9 @@ function contacto() {
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
         <Hero 
-          textOne="ATENDEMOS"
-          textTwo="URGENCIAS"
-          textThree="POR"
-          textFour="WHATSAPP"
+          textOne="URGENCIAS"
+          textTwo="POR"
+          textThree="WHATSAPP"
           titleOne="Contactanos" 
           titleTwo="Y Resolvemos" 
           titleThree="Tu problema" 
