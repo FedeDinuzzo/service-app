@@ -8,8 +8,8 @@ const Heladeras = () => (
     <div className="absolute z-[0] w-[50%] h-[50%] -left-1/2 mt-[10%] rounded-full pink__gradient"/>
     
     <div className={layout.sectionImgReverse}>
-      <img src={heladera} alt="heladera" className="w-[280px] md:w-[320px] xl:w-auto lg:mr-36"/>
-      <img src={atencion} alt="" className="absolute pt-52 pl-28 md:pl-32 lg:pl-48 md:w-[86%] xl:w-auto" />
+      <img src={heladera} alt="heladera" loading="lazy" className="w-[280px] md:w-[320px] xl:w-auto lg:mr-36"/>
+      <img src={atencion} alt="atencion tecnica inmediata" loading="lazy" className="absolute pt-52 pl-28 md:pl-32 lg:pl-48 md:w-[86%] xl:w-auto" />
     </div>
 
     <div className="lg:pr-8">

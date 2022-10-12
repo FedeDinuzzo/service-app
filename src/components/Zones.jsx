@@ -6,7 +6,7 @@ const Zones = () => (
     <div className={`${styles.flexCenter} flex-wrap md:w-full z-[10]`}>
       {zones.map((zone) => (
         <div key={zone.id} className={`flex-1 ${styles.flexCenter} min-w-[270px]`}>
-          <img src={zone.logo} alt="zones" className="my-4"/>
+          <img src={zone.logo} alt="zones" loading="lazy" className="my-4"/>
         </div>
       ))};
     </div>

@@ -1,4 +1,4 @@
-import { logo, wppLogo } from '../assets';
+import { logo, wppLogo, navInicio, navHeladera, navLavarropas, navContacto  } from '../assets';
 import { navLinks } from '../constants';
 import { Link } from 'react-router-dom';
 import styles from "../style";
@@ -36,7 +36,7 @@ const Navbar = () => {
                 <motion.img
                 initial={{ rotate: 0 }}
                 animate={{ rotate: [0, -10, 10, -10, 10, -10, 10, 0], transition: { duration: 2, delay: 4, ease: "easeIn", repeat: Infinity, repeatDelay: 8, repeatType: "reverse" },}}
-                key={nav.id} src={`./src/assets/nav${nav.title}.svg`} alt={nav.title} className={`${index === 2 ? 'mx-12' : ''} text-center h-[28px] w-full`} 
+                key={nav.id} src={nav.img} alt="links" className={`${index === 2 ? 'ml-24' : ''} text-center h-[28px] w-auto`} 
                 />
               </Link>
             ))}

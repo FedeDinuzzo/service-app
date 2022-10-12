@@ -14,11 +14,11 @@ const repair = ({ gadget, step }) => (
     </div>
     
     <div className={`${layout.sectionImgReverse} mb-[400px] sm:mb-[500px] lg:mb-[640px] md:ml-12`}>
-      <img src={ellipse} alt="step4" className="absolute mt-96"/>
-      <img src={step1} alt="step1" className="absolute mt-96"/>
-      <img src={step} alt={step} className="absolute mt-96"/>
-      <img src={step3} alt="step3" className="absolute mt-96"/>
-      <img src={step4} alt="step4" className="absolute mt-96"/>
+      <img src={ellipse} alt="step4" loading="lazy" className="absolute mt-96"/>
+      <img src={step1} alt="step1" loading="lazy" className="absolute mt-96"/>
+      <img src={step} alt={step} loading="lazy" className="absolute mt-96"/>
+      <img src={step3} alt="step3" loading="lazy" className="absolute mt-96"/>
+      <img src={step4} alt="step4" loading="lazy" className="absolute mt-96"/>
     </div>
     
   </section>

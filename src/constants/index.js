@@ -1,20 +1,24 @@
-import { people01, people02, people03, mapa, instagram, linkedin, telefono, like, shield, star, capitalFederal, zonaSur, zonaNorte  } from "../assets";
+import { people01, people02, people03, mapa, instagram, linkedin, telefono, like, shield, star, capitalFederal, zonaSur, zonaNorte, navContacto, navHeladera, navLavarropas, navInicio  } from "../assets";
 
 export const navLinks = [
   {
     id: "",
+    img: navInicio,
     title: "Inicio",
   },
   {
     id: "heladeras",
+    img: navHeladera,
     title: "Heladeras",
   },
   {
-    id: "lavarropas",
+    id: "Lavarropas",
+    img: navLavarropas,
     title: "Lavarropas",
   },
   {
     id: "contacto",
+    img: navContacto,
     title: "Contacto",
   },
 ];
