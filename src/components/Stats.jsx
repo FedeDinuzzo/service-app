@@ -4,7 +4,7 @@ import Counter from './Counter';
 const Stats = () => (
   
   <section className={`sm:${styles.flexCenter} flex-row flex-wrap mb-10 md:mb-20 m-6 md:-mt-48 lg:-mt-24 xl:mt-0`}>
-    <Counter from={0} to={100} />
+    {/* <Counter from={0} to={100} /> */}
     {stats.map((stat) => (
       <div key={stat.id} className={`sm:flex-1 flex justify-start items-center flex-row m-3 lg:m-0`}>
         <h4 className='font-poppins font-semibold sm:text-[40px] xs:text-[36px] text-[30px] xs:leading-[53px] leading-[43px] text-white'>{stat.value}</h4>

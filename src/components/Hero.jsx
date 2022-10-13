@@ -58,26 +58,11 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
     <div className={`flex-1 flex ${styles.flexCenter} my-0 md:my-10 mb-10 md:mb-0 relative`}>
       <div className="w-[6%] sm:w-[34%] md:w-[14%] xl:w-[0%]"/>
       <div className="w-[94%] sm:w-[70%] md:w-[86%] xl:w-[100%] h-[100%] relative z-[5] pb-[400px] sm:pb-[500px] md:pb-[640px]">
-        <motion.img 
-          initial={{ height: 0, bottom: "4vh", opacity: 0 }}
-          animate={{ height: "100%", opacity: 1, transition: { duration: 1.5, delay: 0.75 }, ease: "easeIn" }}
-          src={Vector} alt="" className="absolute right-[12%]"
-        />
+        
+        <img src={Vector} alt="" className="absolute heroVector right-[12%]"/>
+        <img src={img} alt="fondo" className="absolute heroImg"/>
 
-        <motion.div
-          animate={{ scaleX: 1.01, scaleY: 1.01, transition: { duration: 2, delay: 2, ease: "linear", repeat: Infinity, repeatType: "reverse" },}}
-        >
-          <motion.img 
-            initial={{ x: "100vh", opacity: 0 }}
-            animate={{ x: 0, opacity: 1, transition: { duration: 1.5, delay: 0.75 } }}
-            src={img} alt="fondo" className="absolute" 
-          />
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { duration: 1, delay: 2, ease: "linear" },}}
-        >
+        <div className="balls">
         <div className="absolute left-[15%] top-[54%] hidden xl:block">
           <Ball w={36} h={200} cx={20} cy={80} r={16} cyAnimate={40} duration={4} /> 
         </div>
@@ -117,23 +102,10 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
         <div className="absolute left-[6%] hidden xl:block">
           <Ball w={100} h={200} cx={50} cy={80} r={50} cyAnimate={50} duration={4.25} /> 
         </div> 
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ y: 0 }}
-          animate={{ y: 5, transition: { duration: 2, delay: 2, ease: "linear", repeat: Infinity, repeatType: "reverse" },}}
-        >
-          <motion.div
-            initial={{ x: "100vh" }}
-            animate={{ x: -100, transition: { duration: 1.5, delay: 0.5, ease: "easeOut" },}}
-          >
-            <motion.img 
-              initial={{ x: 0, rotate: 90 }}
-              animate={{ x: 100, rotate: 0, transition: { duration: 1.25, delay: 0.5, ease: "easeInOut" },}}
-              src={robotHand} alt="fondo" className="absolute"
-            />
-          </motion.div>
-        </motion.div>
+        <img src={robotHand} alt="fondo" className="absolute robotHand"/>
+
       </div>
     </div>
     <div className={`ss:hidden ${styles.flexCenter}`}>

@@ -9,7 +9,7 @@ const Navbar = () => {
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
     <div className={`${styles.boxWidth} z-[100]`}>
     <nav className="w-full flex py-6 md:py-6 justify-between items-center navbar">
-      <img src={logo} alt="service electrolux" className="w-[160px] h-[100%] -mt-2 md:mt-0"/>
+      <img rel="preload" src={logo} alt="service electrolux" className="w-[160px] h-[100%] -mt-2 md:mt-0"/>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">      
         {navLinks.map((nav, index) => (
           <li

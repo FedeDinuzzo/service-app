@@ -117,6 +117,68 @@ body {
   }
 }
 
+.appear {
+  animation: opacity 0.75s;
+}
+
+@keyframes opacity { 
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.heroImg {
+  animation: 2s popright;
+}
+
+.robotHand {
+  animation: 1.5s popright, 1.25s turn ease-in-out;
+}
+
+.heroVector {
+  bottom: 0;
+  animation: popBottom 1.75s linear;
+}
+
+@keyframes popBottom {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    height: 100%; 
+  }
+}
+
+@keyframes popright {
+  0% {
+    opacity: 0;
+    right: -200%;
+  }
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+@keyframes turn {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
 .feature-card:hover {
   background: var(--black-gradient);
   box-shadow: var(--card-shadow);
