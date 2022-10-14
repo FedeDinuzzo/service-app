@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion';
-
 const Ball = ({ 
   w, 
   h, 
@@ -11,7 +9,7 @@ const Ball = ({
 }) => (
   <svg width={w} height={h} xmlns="http://www.w3.org/2000/svg">
     <defs>
-      <motion.radialGradient
+      <radialGradient
         id="gradient1"
         fr={0.2}
         fx={0.32}
@@ -27,10 +25,10 @@ const Ball = ({
       >
         <stop offset="0%" stopColor="#DEF9FA" />
         <stop offset="100%" stopColor="#33BBCF" />
-      </motion.radialGradient>
+      </radialGradient>
     </defs>
 
-    <motion.circle
+    <circle
       fill="url(#gradient1)"
       cx={cx}
       cy={cy}

@@ -2,14 +2,10 @@ import React from 'react';
 import styles, { layout } from "../../style";
 import { Hero } from ".."
 import { phone, callButton, ellipse2, callUs} from '../../assets';
-import { motion } from 'framer-motion';
 
 function contacto() {
   return (
-    <motion.div 
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: {duration: 0.75} }}
-    >
+    <div className='appear'>
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
         <Hero 
@@ -64,7 +60,7 @@ function contacto() {
           </section>
         </div>
       </div>
-    </motion.div>
+    </div>
   )
 }
 

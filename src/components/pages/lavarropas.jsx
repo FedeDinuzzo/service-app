@@ -6,14 +6,10 @@ import WorkForm from '../WorkForm';
 import styles from '../../style';
 import CTA from '../CTA';
 import { lavarropasHero, reparacionLavarropas, step2v, tecnicoLavarropas } from '../../assets';
-import { motion } from 'framer-motion';
 
 function lavarropas() {
   return (
-    <motion.div 
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: {duration: 0.75} }}
-    >
+    <div className='appear'>
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Hero 
@@ -36,7 +32,7 @@ function lavarropas() {
           <CTA />
         </div>
       </div>
-    </motion.div>
+    </div>
   )
 }
 

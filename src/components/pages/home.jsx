@@ -2,7 +2,6 @@ import React from 'react'
 import styles from "../../style";
 import { Heladeras, Features, Lavarropas, Zones, CTA, Stats, Hero } from ".."
 import { heladeraLavarropas } from '../../assets';
-import { motion } from 'framer-motion';
 
 function home() {
   return (

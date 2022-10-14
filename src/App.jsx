@@ -1,15 +1,23 @@
 import { Footer, Navbar } from "./components";
-import { BrowserRouter as Router } from "react-router-dom";
-import AnimatedRoutes from "./components/AnimatedRoutes";
+import Home from "./components/pages/home";
+import Heladeras from "./components/pages/heladeras";
+import Lavarropas from "./components/pages/lavarropas";
+import Contacto from "./components/pages/contacto";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => (
-  <Router>
+  <BrowserRouter>
     <div className="bg-primary w-full overflow-hidden">
       <Navbar/>
-      <AnimatedRoutes/>
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<Home />}/> 
+        <Route path="/heladeras" element={<Heladeras />}/>
+        <Route path="/lavarropas" element={<Lavarropas />}/>
+        <Route path="/contacto" element={<Contacto />}/> 
+      </Routes>
       <Footer/>
     </div>
-  </Router>
+  </BrowserRouter>
 );
 
 export default App;

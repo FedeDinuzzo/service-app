@@ -121,6 +121,10 @@ body {
   animation: opacity 0.75s;
 }
 
+.appear2 {
+  animation: opacity 2s linear;
+}
+
 @keyframes opacity { 
   0% {
     opacity: 0;
@@ -131,34 +135,50 @@ body {
   }
 }
 
+.fadeTop {
+  animation: 1s popTop;
+}
+
+.fadeLeft {
+  animation: 1s popLeft;
+}
+
 .heroImg {
-  animation: 2s popright;
+  animation: 2s popRight linear;
 }
 
 .robotHand {
-  animation: 1.5s popright, 1.25s turn ease-in-out;
+  animation: 1.75s popRight, 1.5s turn ease-in-out;
 }
 
 .heroVector {
-  bottom: 0;
-  animation: popBottom 1.75s linear;
+  animation: popBottom 2s linear;
 }
 
 @keyframes popBottom {
   0% {
     opacity: 0;
-    height: 0;
+    transform: translateY(40vh);
   }
-  50% {
+  75% {
     opacity: 0;
   }
   100% {
     opacity: 1;
-    height: 100%; 
+    transform: translateY(0);
   }
 }
 
-@keyframes popright {
+@keyframes popTop {
+  0% {
+    transform: translateY(-40vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes popRight {
   0% {
     opacity: 0;
     right: -200%;
@@ -166,6 +186,15 @@ body {
   100% {
     opacity: 1;
     right: 0;
+  }
+}
+
+@keyframes popLeft {
+  0% {
+    transform: translateX(-40vh);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
