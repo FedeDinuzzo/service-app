@@ -1,4 +1,3 @@
-import { animate } from "framer-motion";
 import React, { useEffect, useRef } from "react";
 
 function Counter({ from, to }) {

@@ -24,7 +24,7 @@ import telefono from "./telefono.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
-import atencion from "./atencion.png";
+import atencion from "./atencion.webp";
 import phone from "./phone.webp";
 import heladeraHero from "./heladeraHero.webp";
 import lavarropasHero from "./lavarropasHero.webp";

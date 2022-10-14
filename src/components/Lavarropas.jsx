@@ -13,7 +13,7 @@ const Lavarropas = () => (
     </div>
     
     <div className={layout.sectionImgReverse}>
-      <img src={lavarropas} alt="lavarropas" loading="lazy" className=" w-[240px] md:w-[280px] xl:w-auto lg:ml-36"/>
+      <img src={lavarropas} alt="lavarropas" loading="lazy" width="100%" h="100%" className="w-[240px] md:w-[280px] xl:w-auto lg:ml-36"/>
     </div>
     
   </section>

@@ -144,11 +144,11 @@ body {
 }
 
 .heroImg {
-  animation: 2s popRight linear;
+  animation: 2.25s popRight;
 }
 
 .robotHand {
-  animation: 1.75s popRight, 1.5s turn ease-in-out;
+  animation: 2s popRight, 1.5s turn ease-in-out;
 }
 
 .heroVector {

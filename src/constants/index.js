@@ -99,14 +99,17 @@ export const footerLinks = [
       {
         name: "Efectivo",
         link: "",
+        id: '',
       },
       {
         name: "Transferencia",
         link: "",
+        id: '',
       },
       {
         name: "Mercado Pago",
         link: "",
+        id: '',
       },
     ],
   },
@@ -116,18 +119,22 @@ export const footerLinks = [
       {
         name: "Contacto",
         link: "https://service-electrolux.ar/",
+        id: '',
       },
       {
         name: "Heladeras",
         link: "https://service-electrolux.ar/heladeras",
+        id: '',
       },
       {
         name: "Lavarropas",
         link: "https://service-electrolux.ar/lavarropas",
+        id: '',
       },
       {
         name: "Contacto",
         link: "https://service-electrolux.ar/contacto",
+        id: '',
       },
     ],
   },
@@ -137,10 +144,12 @@ export const footerLinks = [
       {
         name: "011 4383-8283",
         link: "011 4383-8283",
+        id: '',
       },
       {
         name: "011 4382-8369",
         link: "011 4382-8369",
+        id: '',
       },
     ],
   },

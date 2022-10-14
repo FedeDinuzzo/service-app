@@ -3,8 +3,9 @@ import { autorizado, robotHand, Vector } from "../assets";
 import SolicitarTecnico from "./SolicitarTecnico";
 import Ball from "./animations/ball";
 
-const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img }) => (
-  <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY} lg:mt-[4px] xl:-mt-16`}>
+const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img }) => { 
+  return(
+    <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY} lg:mt-[4px] xl:-mt-16`}>
     <div className={`flex-1 ${styles.flexStartHero} flex-col xl:px-0 sm:px-16 px-6`}>
       <div className="fadeTop flex flex-row items-center -mt-9 sm:mt-0 lg:mt-[28px] xl:mt-0 py-[4px] xl:py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
         <img src={autorizado} alt="autorizado" className="w-[32px] h-[32px]" />
@@ -43,8 +44,8 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
       <div className="w-[6%] sm:w-[34%] md:w-[14%] xl:w-[0%]"/>
       <div className="w-[94%] sm:w-[70%] md:w-[86%] xl:w-[100%] h-[100%] relative z-[5] pb-[400px] sm:pb-[500px] md:pb-[640px]">
         
-        <img src={Vector} alt="" className="absolute heroVector right-[12%]"/>
-        <img src={img} alt="fondo" className="absolute heroImg"/>
+        <img rel="preload" src={Vector} alt="" className="absolute heroVector right-[12%]"/>
+        <img rel="preload" src={img} alt="fondo" className="absolute heroImg"/>
 
         <div className="balls">
         <div className="absolute left-[15%] top-[54%] hidden xl:block">
@@ -88,7 +89,7 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
         </div> 
         </div>
 
-        <img src={robotHand} alt="fondo" className="absolute robotHand"/>
+        <img rel="preload" src={robotHand} alt="fondo" width="367px" h="369px" className="absolute md:w-full md:h-full robotHand"/>
 
       </div>
     </div>
@@ -96,6 +97,6 @@ const Hero = ({ textOne, textTwo, textThree, titleOne, titleTwo, titleThree, img
       <SolicitarTecnico />
     </div>
   </section>
-);
+)};
 
 export default Hero;
